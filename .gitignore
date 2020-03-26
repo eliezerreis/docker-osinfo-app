@@ -1,0 +1,17 @@
+# Eclipse Files #
+.classpath
+.project
+.settings/
+
+# IntelliJ Files #
+.idea
+*.iml
+
+# Output Directories #
+bin/
+
+# Dependencies #
+node_modules
+
+# Log Files (npm) #
+*.log

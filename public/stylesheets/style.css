@@ -1,0 +1,27 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+table {
+  min-width: 400px;
+  border-collapse: collapse;
+  border: 1px solid cornflowerblue;
+  letter-spacing: 1px;
+  font-size: .8rem;
+}
+
+th, td, tr {
+  border: 1px solid cornflowerblue;
+  padding: 10px;
+  text-align: center;
+}
+
+
+tr:nth-child(even) {
+  background: aliceblue;
+}
