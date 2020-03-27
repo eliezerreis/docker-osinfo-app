@@ -11,17 +11,17 @@ RUN apk update && \
     apk upgrade && \
     apk add git
 
-#clone and install dependencies
-RUN git clone https://github.com/eliezerreis/docker-osinfo-app.git . \
-    && npm install
-
 #change the user
 RUN chown -R node:node /srv/www/docker-os-info
 USER node
 
+#clone and install dependencies
+RUN git clone https://github.com/eliezerreis/docker-osinfo-app.git . \
+    && npm install
+
 #configure port
-ENV process.env.PORT 300
+ENV PORT 3000
 EXPOSE 3000
 
 #run the app
-CMD ["node", "bin/www"]
+CMD ["node", "./bin/www"]
