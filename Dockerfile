@@ -17,7 +17,8 @@ USER node
 
 #clone and install dependencies
 RUN git clone https://github.com/eliezerreis/docker-osinfo-app.git . \
-    && npm install
+    && npm install \
+    && npm cache clean
 
 #configure port
 ENV PORT 3000
